@@ -5,39 +5,39 @@ const imageElement = document.getElementById('image-object');
 let isFirstClick = true;
 
 const messages = [
-{ message: "Hi there!", boy : "boy-1-2.png", is_moving: false },
-{ message: "Good to see you!", boy : "boy-1-1.png", is_moving: false },
-{ message: "You know where else it would be great to see you?", boy : "boy-1-1.png", is_moving: false },
-{ message: "At my birthday party!", boy : "boy-1-3.png", is_moving: false },
-{ message: "I'm turning 30 this summer (gosh!)", boy : "boy-1-2.png", is_moving: false },
-{ message: "And I think the best way to celebrate it...", boy : "boy-1.png", is_moving: false },
-{ message: "Is to bring all my closest friends and enjoy a few summer days together!", boy : "boy-1-3.png", is_moving: false },
-{ message: "For that occasion I'm booking a beautiful house", boy : "boy-1-2.png", is_moving: false },
-{ message: "With a lush garden..", boy : "boy-1-2.png", is_moving: false },
-{ message: "In the most beautiful summer region of Sweden - Österlen", boy : "boy-1-1.png", is_moving: false },
-{ message: "For the whole week!", boy : "boy-1-3.png", is_moving: false },
-{ message: "...", boy : "boy-1-2.png", is_moving: false },
-{ message: "Follow me there!", boy : "boy-1-1.png", is_moving: true }, 
-{ message: "This place will provide us plenty of opportunities to.. ", boy : "boy-1-2.png", is_moving: false },
-{ message: "Bike around!", boy : "boy-1-3.png", is_moving: false, object: { path: "bike-1.png", class:"bike" }},
-{ message: "Hike in the woods!", boy : "boy-1-2.png", is_moving: false, object: { path: "backpack.png", class: "bike" }},
-{ message: "Explore local bakeries and restaurants", boy : "boy-1-1.png", is_moving: false, object: { path: "cinnamon.png", class: "cinnamon" }},
-{ message: "Check out local museums", boy : "boy-1-1.png", is_moving: false, object: { path: "camera.png", class: "camera" } },
-{ message: "Hang out at the most beautiful beach in Sweden", boy : "boy-1-2.png", is_moving: false, object: { path: "ball.png", class: "bike" }},
-{ message: "Eat tons of apples!", boy : "boy-1-3.png", is_moving: false, object: { path: "apple.png", class: "apple" } },
-{ message: "Play board and video games", boy : "boy-1-1.png", is_moving: false, object: { path: "joy-stick.png", class: "joy-stick" } },
-{ message: "Chill out in a hammock in the garden..", boy : "boy-1-2.png", is_moving: false, object: { path: "hammock.png", class: "bike" }},
-{ message: "Zzzzz", boy : "boy-1.png", is_moving: false},
-{ message: "Well..", boy : "boy-1.png", is_moving: false},
-{ message: "What is a summer dream for YOU?", boy : "boy-1-2.png", is_moving: false, object: { path: "", class: "" }},
-{ message: "Let's make it happen!", boy : "boy-1-3.png", is_moving: false},
-{ message: "...", boy : "boy-1-1.png", is_moving: false, triggerEvent: true },
-{ message: "...", boy : "boy-1-1.png", is_moving: false},
-{ message: "Just one last thing...", boy : "boy-1-2.png", is_moving: false },
-{ message: "Remember, the best birthday present you can give me is...", boy : "boy-1.png", is_moving: false},
-{ message: "To dream these summer days with me!", boy : "boy-1-3.png", is_moving: false},
-{ message: "That's all for now!", boy : "boy-1-2.png", is_moving: false },
-{ message: "Hej då!", boy : "boy-1-1.png", is_moving: false, triggerEventFinal: true }
+{ message: "Hi there!", boy : "items/boy-1-2.png", is_moving: false },
+{ message: "Good to see you!", boy : "items/boy-1-1.png", is_moving: false },
+{ message: "You know where else it would be great to see you?", boy : "items/boy-1-1.png", is_moving: false },
+{ message: "At my birthday party!", boy : "items/boy-1-3.png", is_moving: false },
+{ message: "I'm turning 30 this summer (gosh!)", boy : "items/boy-1-2.png", is_moving: false },
+{ message: "And I think the best way to celebrate it...", boy : "items/boy-1.png", is_moving: false },
+{ message: "Is to bring all my closest friends and enjoy a few summer days together!", boy : "items/boy-1-3.png", is_moving: false },
+{ message: "For that occasion I'm booking a beautiful house", boy : "items/boy-1-2.png", is_moving: false },
+{ message: "With a lush garden..", boy : "items/boy-1-2.png", is_moving: false },
+{ message: "In the most beautiful summer region of Sweden - Österlen", boy : "items/boy-1-1.png", is_moving: false },
+{ message: "For the whole week!", boy : "items/boy-1-3.png", is_moving: false },
+{ message: "...", boy : "items/boy-1-2.png", is_moving: false },
+{ message: "Follow me there!", boy : "items/boy-1-1.png", is_moving: true }, 
+{ message: "This place will provide us plenty of opportunities to.. ", boy : "items/boy-1-2.png", is_moving: false },
+{ message: "Bike around!", boy : "items/boy-1-3.png", is_moving: false, object: { path: "items/bike-1.png", class:"bike" }},
+{ message: "Hike in the woods!", boy : "items/boy-1-2.png", is_moving: false, object: { path: "items/backpack.png", class: "bike" }},
+{ message: "Explore local bakeries and restaurants", boy : "items/boy-1-1.png", is_moving: false, object: { path: "items/cinnamon.png", class: "cinnamon" }},
+{ message: "Check out local museums", boy : "items/boy-1-1.png", is_moving: false, object: { path: "items/camera.png", class: "camera" } },
+{ message: "Hang out at the most beautiful beach in Sweden", boy : "items/boy-1-2.png", is_moving: false, object: { path: "items/ball.png", class: "bike" }},
+{ message: "Eat tons of apples!", boy : "items/boy-1-3.png", is_moving: false, object: { path: "items/apple.png", class: "apple" } },
+{ message: "Play board and video games", boy : "items/boy-1-1.png", is_moving: false, object: { path: "items/joy-stick.png", class: "joy-stick" } },
+{ message: "Chill out in a hammock in the garden..", boy : "items/boy-1-2.png", is_moving: false, object: { path: "items/hammock.png", class: "bike" }},
+{ message: "Zzzzz", boy : "items/boy-1.png", is_moving: false},
+{ message: "Well..", boy : "items/boy-1.png", is_moving: false},
+{ message: "What is a summer dream for YOU?", boy : "items/boy-1-2.png", is_moving: false, object: { path: "", class: "" }},
+{ message: "Let's make it happen!", boy : "items/boy-1-3.png", is_moving: false},
+{ message: "...", boy : "items/boy-1-1.png", is_moving: false, triggerEvent: true },
+{ message: "...", boy : "items/boy-1-1.png", is_moving: false},
+{ message: "Just one last thing...", boy : "items/boy-1-2.png", is_moving: false },
+{ message: "Remember, the best birthday present you can give me is...", boy : "items/boy-1.png", is_moving: false},
+{ message: "To dream these summer days with me!", boy : "items/boy-1-3.png", is_moving: false},
+{ message: "That's all for now!", boy : "items/boy-1-2.png", is_moving: false },
+{ message: "Hej då!", boy : "items/boy-1-1.png", is_moving: false, triggerEventFinal: true }
 ];
 
 let currentIndex = 0;
@@ -73,14 +73,14 @@ document.addEventListener('click', function(event) {
 
     // Boy movement animation (only if is_moving is true)
     if (currentMessage.is_moving) {
-      const animation = boyTextElement.animate([{ left: `${currentPosition}px` }, { left: `${currentPosition - 400}px` }], {
+      const animation = boyTextElement.animate([{ left: `${currentPosition}px` }, { left: `${currentPosition - 450}px` }], {
         duration: 3000,
         easing: 'ease-in-out'
       });
 
       animation.finished.then(() => {    
         isAnimating = false;
-        currentPosition -= 400; 
+        currentPosition -= 450; 
         boyTextElement.style.left = `${currentPosition}px`; 
    
       });

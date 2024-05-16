@@ -8,14 +8,14 @@
 <style>
 @font-face {
     font-family: 'pixel'; /* Replace with the name of your font */
-    src: url('joystix.otf') format('truetype'); 
+    src: url('items/joystix.otf') format('truetype'); 
     /* You might need additional src lines for .otf, .woff, etc. */
 }
 
 body {
 margin: 0;
 padding: 0;
-background-image: url("background-final-pixel-2.png");
+background-image: url("items/background-final-pixel-2.png");
 background-color: black;
 background-size: cover;
 background-attachment: fixed;
@@ -25,7 +25,7 @@ font-size: 11px;
 .text-container { /* Assuming you want them positioned within the main container */
   position: absolute; 
   bottom: 80%; /* Position 20% from the bottom */
-  top: 50%;
+  top: 45%;
   left: 70%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -160,10 +160,10 @@ transform: translateY(0);
 
 @keyframes walk {
   0% { left: 0; }  
-  100% { left: 400px; } 
+  100% { left: 450px; } 
 }
 .boy-and-text.walk { /* Add this to maintain the position */
-  left: 400px; 
+  left: 450px; 
 }
 
 .fade-in {
@@ -185,20 +185,20 @@ transform: translateY(0);
 </head>
 <body>
 <audio id="background-music" loop autoplay>
-    <source src="music.wav" type="audio/wav">
+    <source src="items/music.wav" type="audio/wav">
   </audio>
 <div class="text-container">
  <div class="boy-and-text">
    <div class="speech-bubble-text"> 
-     <img src="speech-bubble-2.png" class="speech-bubble" alt="Speech bubble">
+     <img src="items/speech-bubble-2.png" class="speech-bubble" alt="Speech bubble">
      <div id="message"> ... </div> 
    </div>
-   <img src="boy-1.png" class="boy" alt="Jumping boy">
-   <img id="image-object" class="object-right fade-in hidden" src="apple.png" alt="Optional object">
+   <img src="items/boy-1.png" class="boy" alt="Jumping boy">
+   <img id="image-object" class="object-right fade-in hidden" src="items/apple.png" alt="Optional object">
 
  </div>
  <div id="scroll-and-text" class="hidden-2" >
-   <img id="scroll-image" class="scroll" src="scroll.png" alt="Scroll image">
+   <img id="scroll-image" class="scroll" src="items/scroll.png" alt="Scroll image">
     <div id="scroll-text"> 
 
 <i><u>What?</u><br> My 30th birthday!
