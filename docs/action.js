@@ -72,17 +72,18 @@ document.addEventListener('click', function(event) {
     }
 
     // Boy movement animation (only if is_moving is true)
-    if (currentMessage.is_moving) {
-      const animation = boyTextElement.animate([{ left: `${currentPosition}px` }, { left: `${currentPosition - 450}px` }], {
+  if (currentMessage.is_moving) {
+      const viewportWidth = window.innerWidth;
+      const walkDistance = viewportWidth * 0.40; // Calculate 15% of viewport width
+      const animation = boyTextElement.animate([{ left: `${currentPosition}px` }, { left: `${currentPosition - walkDistance}px` }], {
         duration: 3000,
         easing: 'ease-in-out'
       });
 
-      animation.finished.then(() => {    
+      animation.finished.then(() => {
         isAnimating = false;
-        currentPosition -= 450; 
-        boyTextElement.style.left = `${currentPosition}px`; 
-   
+        currentPosition -= walkDistance;
+        boyTextElement.style.left = `${currentPosition}px`;
       });
     } else {
       isAnimating = false; 
